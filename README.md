@@ -1,5 +1,5 @@
 # DistributedApplications 
-Projekt opiera się między innymi na wykorzystaniu asynchronicznej komunikacji za pomocą RabbitMQ, Spring Cloud Functions oraz składa się z kilku modułów, które współpracują ze sobą w celu realizacji założonych funkcjonalności. Asynchroniczność pozwala między innymi modulowi raportów "zbierac" eventy/dane bez konieczności tego aby usluga z ktorej potrzebne są dane, była aktualnie dostępna po "drugiej stronie" jak ma się to synchronicznym tradycjnym modelu. 
+Projekt opiera się między innymi na wykorzystaniu asynchronicznej komunikacji za pomocą RabbitMQ. Asynchroniczność pozwala między innymi modulowi raportów "zbierac" eventy/dane bez konieczności tego aby usluga z ktorej potrzebne są dane, była aktualnie dostępna po "drugiej stronie" jak ma się to synchronicznym tradycjnym modelu. 
 
 Głównym modułem jest moduł pracowników, który po dodaniu pracownika tworzy event, który następnie jest konsumowany przez moduł raportów. Moduł raportów, oprócz tego, konsumuje również wiadomości z modułu sprzętowego firmy.
 
